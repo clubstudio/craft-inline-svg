@@ -17,6 +17,11 @@
       "club\\inlinesvg\\": "src/"
     }
   },
+  "config": {
+    "platform": {
+      "php": "7.0"
+    }
+  },
   "extra": {
     "name": "Inline SVG",
     "handle": "inlinesvg",
