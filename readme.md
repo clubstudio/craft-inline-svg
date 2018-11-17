@@ -8,7 +8,7 @@
 A Twig extension for Craft CMS that helps you inline SVGs in your templates.
 
 ## Why?
-While Craft provides an `svg()` function out of the box, you need to pass an Asset element or full path every time you use it. This plugin provides allows you to define SVG paths and inline SVGs .
+While Craft provides an `svg()` function out of the box, you need to pass an Asset element or full path every time you use it. If all of your SVGs are stored in the same (or a handful of) directories, this plugin allows you to use shorter, more convenient syntax to inline your SVG.
 
 ## Installation
 Install via the Plugin Store within your Craft 3 installation or using Composer: `composer require clubstudioltd/craft-inline-svg`
@@ -17,6 +17,10 @@ Install via the Plugin Store within your Craft 3 installation or using Composer:
 The plugin comes with a `config.php` file that defines some sensible defaults.
 
 If you want to set your own values you should create a `inlinesvg.php` file in your Craft `/config` directory. The contents of this file will get merged with the plugin defaults, so you only need to specify values for the settings you want to override.
+
+You should add the paths to all of the directories where your SVG files are stored to the `paths` configuration array.
+
+If you'd like to add a class to every SVG that is output you should add it to the `class` configuration value. Separate multiple classes with spaces.
 
 ## Basic Usage
 Once activated and configured you can use the `inlineSvg()` function in your templates.
@@ -39,6 +43,8 @@ You can override the classes defined in your configuration file ad hoc using the
 ```
 {{ inlineSvg('icon', { class: 'override-class' }) }}
 ```
+
+this would output `<svg class="override-class" ... >` regardless of any other classes defined in your config file.
 
 ### Adding additional parameters
 You can add additional parameters by passing them as an array:
