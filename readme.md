@@ -1,3 +1,5 @@
+<img src="./src/icon.svg" width="64">
+
 # Craft CMS Inline SVG (Craft 3.x)
 [![Build Status](https://travis-ci.com/clubstudioltd/craft-inline-svg.svg?branch=master)](https://travis-ci.com/clubstudioltd/craft-inline-svg)
 [![Latest Stable Version](https://poser.pugx.org/clubstudioltd/craft-inline-svg/v/stable)](https://packagist.org/packages/clubstudioltd/craft-inline-svg)
