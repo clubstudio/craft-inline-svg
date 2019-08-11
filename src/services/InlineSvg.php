@@ -30,7 +30,7 @@ class InlineSvg extends Component
      */
     public function __construct()
     {
-        $this->config = Craft::$app->config->getConfigFromFile('inlinesvg');
+        $this->config = \club\inlinesvg\InlineSvg::getInstance()->getSettings();
     }
 
     /**
