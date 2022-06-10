@@ -20,7 +20,7 @@ class InlineSvg extends Plugin
         Craft::$app->view->registerTwigExtension(new InlineSvgTwigExtension);
     }
 
-    protected function createSettingsModel()
+    protected function createSettingsModel(): ?craft\base\Model
     {
         return new Settings();
     }

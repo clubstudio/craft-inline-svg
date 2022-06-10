@@ -9,7 +9,7 @@ class Settings extends Model
     public $paths = [];
     public $class = '';
 
-    public function rules()
+    public function rules(): array
     {
         return [
             ['paths', 'required'],

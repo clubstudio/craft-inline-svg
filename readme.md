@@ -1,6 +1,6 @@
 <img src="./src/icon.svg" width="64">
 
-# Craft CMS Inline SVG (Craft 3.x)
+# Craft CMS Inline SVG
 [![Build Status](https://travis-ci.com/clubstudioltd/craft-inline-svg.svg?branch=master)](https://travis-ci.com/clubstudioltd/craft-inline-svg)
 [![Latest Stable Version](https://poser.pugx.org/clubstudioltd/craft-inline-svg/v/stable)](https://packagist.org/packages/clubstudioltd/craft-inline-svg)
 [![Total Downloads](https://poser.pugx.org/clubstudioltd/craft-inline-svg/downloads)](https://packagist.org/packages/clubstudioltd/craft-inline-svg)
@@ -13,7 +13,7 @@ A Twig extension for Craft CMS that helps you inline SVGs in your templates.
 While Craft provides an `svg()` function out of the box, you need to pass an Asset element or full path every time you use it. If all of your SVGs are stored in the same (or a handful of) directories, this plugin allows you to use shorter, more convenient syntax to inline your SVG.
 
 ## Installation
-Install via the Plugin Store within your Craft 3 installation or using Composer: 
+Install via the Plugin Store within your Craft 3 installation or using Composer:
 
 ```composer require clubstudioltd/craft-inline-svg```
 

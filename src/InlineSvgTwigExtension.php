@@ -2,17 +2,17 @@
 
 namespace club\inlinesvg;
 
-use Twig_Extension;
-use Twig_SimpleFunction;
+use Twig\Extension\AbstractExtension;
+use Twig\TwigFunction;
 
-class InlineSvgTwigExtension extends Twig_Extension
+class InlineSvgTwigExtension extends AbstractExtension
 {
     /**
      * Returns the name of the extension.
      *
      * @return string The extension name
      */
-    public function getName()
+    public function getName(): string
     {
         return 'Inline SVG';
     }
@@ -22,10 +22,10 @@ class InlineSvgTwigExtension extends Twig_Extension
      *
      * @return array
      */
-    public function getFunctions()
+    public function getFunctions(): array
     {
         return [
-            new Twig_SimpleFunction('inlineSvg', [$this, 'inlineSvg']),
+            new TwigFunction('inlineSvg', [$this, 'inlineSvg'], ['is_safe' => ['html']]),
         ];
     }
 
@@ -37,7 +37,7 @@ class InlineSvgTwigExtension extends Twig_Extension
      * @param  array  $params
      * @return string
      */
-    public function inlineSvg($name, $class = null, $params = [])
+    public function inlineSvg($name, $class = null, $params = []): string
     {
         return InlineSvg::getInstance()->inlineSvg->render($name, $class, $params);
     }

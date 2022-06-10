@@ -1,11 +1,11 @@
 {
   "name": "clubstudioltd/craft-inline-svg",
-  "description": "A plugin to aid inlining SVGs in Craft 3",
-  "version": "0.1.2",
+  "description": "A plugin to aid inlining SVGs",
+  "version": "2.0.0",
   "type": "craft-plugin",
   "license": "MIT",
   "require": {
-    "craftcms/cms": "^3.0.0"
+    "craftcms/cms": "^4.0.0"
   },
   "require-dev": {
       "mockery/mockery": "0.9.*",
@@ -15,11 +15,6 @@
   "autoload": {
     "psr-4": {
       "club\\inlinesvg\\": "src/"
-    }
-  },
-  "config": {
-    "platform": {
-      "php": "7.0"
     }
   },
   "extra": {
