@@ -5,11 +5,11 @@
   "type": "craft-plugin",
   "license": "MIT",
   "require": {
-    "craftcms/cms": "^4.0.0"
+      "craftcms/cms": "^4.0.0"
   },
   "require-dev": {
       "mockery/mockery": "0.9.*",
-      "phpunit/phpunit": "~5.0",
+      "phpunit/phpunit": "^9.0",
       "phpunit/php-token-stream": "<2"
   },
   "autoload": {
