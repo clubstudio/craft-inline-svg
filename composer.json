@@ -1,7 +1,7 @@
 {
   "name": "clubstudioltd/craft-inline-svg",
   "description": "A plugin to aid inlining SVGs",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "type": "craft-plugin",
   "license": "MIT",
   "require": {
