@@ -5,7 +5,7 @@
   "type": "craft-plugin",
   "license": "MIT",
   "require": {
-      "craftcms/cms": "^4.0.0"
+      "craftcms/cms": "^4.0|^5.0"
   },
   "require-dev": {
       "mockery/mockery": "0.9.*",
@@ -28,5 +28,11 @@
     "developer": "Club Studio Ltd",
     "developerUrl": "https://clubstudio.co.uk",
     "class": "club\\inlinesvg\\InlineSvg"
+  },
+  "config": {
+    "allow-plugins": {
+      "yiisoft/yii2-composer": true,
+      "craftcms/plugin-installer": true
+    }
   }
 }
